@@ -242,7 +242,7 @@ p{
 }
 
 /* Media query para tablets */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
     .container {
       flex-wrap: wrap;
       justify-content: center; /* Centra las cards */
@@ -252,7 +252,7 @@ p{
     .card {
       flex: 0 1 calc(50% - 20px); /* 2 cards por fila */
     }
-  }
+  
   /* Media query para móviles */
 @media (max-width: 480px) {
     .container {
