@@ -323,7 +323,8 @@ p{
     }
     
     .contact-box {
-    max-width: 850px;
+   width: 700px;
+   height: 300;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
