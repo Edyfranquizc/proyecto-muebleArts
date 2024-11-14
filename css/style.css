@@ -678,4 +678,9 @@ footer{
     }
     }
 
-  
+  .fa-whatsapp{
+    font-size: 5em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
