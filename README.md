@@ -12,4 +12,4 @@ Se Utilizó las siguientes tecnologías:
 
 HTML/CSS /JS
 
-Link de la página web 📌 Happy Journey 👉🏼 https://edyfranquizc.github.io/proyecto-muebleArts/
+Link de la página web 📌 MueblesArts 👉🏼 https://edyfranquizc.github.io/proyecto-muebleArts/
