@@ -11,3 +11,5 @@ La página está estructurada con HTML semántico y utiliza las etiquetas `<head
 Se Utilizó las siguientes tecnologías:
 
 HTML/CSS /JS
+
+Link de la página web 📌 Happy Journey 👉🏼 https://edyfranquizc.github.io/proyecto-muebleArts/
