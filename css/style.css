@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Krona+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     scroll-behavior: smooth;
     box-sizing: border-box;
     text-decoration: none;
-    font-family:nunito, sans-serif;
+    font-family:"Ibarra Real Nova", serif;
 }
-
+::-webkit-scrollbar{
+    width: 0;
+}
 body{
     margin: 0;
     padding: 0;
     background-color:#f2f3eb;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -39,27 +42,28 @@ a {
 .nav-active {
     background-color: #ecedcf9b;
     border-radius: 8px;
-}.navbar {
+}
+.navbar{
     background-color: #FF0000;
     display: flex;
     align-items: center;
     padding: 2px 5px;
+    padding-bottom: 1rem;
     justify-content:space-between;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
 
-
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
 }
 
 .nav-link {
     font-size: 0.90rem;
-    color: #ECEDCF;
+    color:#ffffff;
     text-decoration: none;
     padding: 8px 25px;
     border-radius: 4px;
@@ -68,13 +72,16 @@ a {
 
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.502);
-    color: #fefefe;
+    color:#f9ffcd;
+    text-transform: uppercase;
+    font-size: small;
+    
 }
 
 .carrito {
     display: flex;
     align-items: center;
-    color: #ECEDCF;
+    color: #ffffff;
     text-decoration: none;
     gap: 5px;
     margin-left: 20px;
@@ -86,9 +93,9 @@ a {
 }
 
 .carrito:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(121, 2, 2, 0.502);
     border-radius: 4px;
-    color: #fefefe;
+    color: #ffffff;
 }
     
 .banner {
@@ -135,7 +142,7 @@ a {
         }
 
 h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -144,7 +151,8 @@ h1{
 }
 
 h2{
-    margin-left: 1rem;
+    margin-left: 2rem;
+   
 }
 
 p{
@@ -152,18 +160,21 @@ p{
     margin-right: 0.90rem;
 }
 
+h3{
+    font-size: 1.5rem;
+}
 .promo{ 
     width:100%;
     margin: auto;
     padding-left: 0.2rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.50rem;
     text-align: center;
     background-color: #ECEDCF;
     color: #FF0000 ;}
 .promo-text{
-    font-size: 0.60rem;
-    padding-top: 5px;
+    font-size: 0.80rem;
+    padding-top: 5rem;
     font-weight:bold;
 }
 
@@ -207,6 +218,7 @@ p{
     border-radius: 4px;
     font-size: 0.60rem;
     font-weight: bold;
+
 }
 
 .card-image {
@@ -215,39 +227,48 @@ p{
     border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 
 .card-title {
     color: #FF0000;
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 10px;
     font-weight: bold;
     padding-left: 15px;
+    padding-top: 0.50rem;
 }
 
 .card-text {
     color: #353434;
-    font-size:0.90rem;
+    font-size:12px;
     line-height:1.4;
     margin-bottom: 15px;
     margin-left: 15px;
 }
 
-.card-button {
+
+.card-boton {
     background: #FF0000;
-    color: #ECEDCF;
-    margin-left: 15px;
-    padding: 4px 10px;
+    color: #f2f3eb;
+    margin-left: 80px;
+    margin: auto;
+    padding: 5px 10px;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     transition: background-color 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
-.card-button:hover {
+.card-boton:hover {
     background: #871501;
+    color: #f9ffcd;
+    
 }
 /* barra de scroll oculta */
 
@@ -287,6 +308,54 @@ p{
       margin-bottom: 20px; /* Espacio entre cards */
     }
   }
+  /* inicio de cosultas */
+  #inicio-consultas {
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: justify; }
+    #inicio {
+        max-width: 75%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold; }
+        #inicio .card-body {
+          padding-top: 2rem;
+          padding-bottom: 5rem;
+          min-width: 40px;
+          display: inline-flex;
+          border: none; 
+        font-size: 16px;}
+          #inicio .card-body .icon {
+            padding-right: 5rem;
+            text-decoration: none;
+            font-size: 30px;
+            width: 90px;
+            height: 10px;
+            line-height: 60px;
+            text-align: center;
+            color:#FF0000;
+            justify-content: space-around; }
+          #inicio .card-body .content {
+            padding-left: 5rem;
+            padding-bottom: 1rem; }
+            .p-consultas{
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+      
+   /*AQUI WHATSAPP FLOTANTE*/
+  .fa-whatsapp{
+    font-size: 4em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
    /*AQUI COMIENZA SECCION NOSOTROS*/
    .nosotros {
     padding: 40px;
@@ -319,17 +388,101 @@ p{
     color: #333; /* Color para el nombre MueblesArt */
     font-weight: bold;
   }
+  .nosotros img{
+    max-width: 50%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    object-fit: contain;
+  }
 
   /*AQUI COMIENZA SECCION BLOG*/
-  .titulo-blog{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+
+  .blog{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+.blog-titulo{
+    font-size: 2rem;
+    color:#FF0000;
+    font-weight: 600;
+}
+.blog-subtitulo{
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: #111111;
+   font-weight: 600;
+}
+
+.secciones{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.item{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+
+.item h2 {
+    color:  #1d1d1d;;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    
+}
+
+.item img {
+    max-width: 20%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+        
+}
+
+
+.cta {
+    background-color:#f9ffcd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-bottom: 5rem;
+}
+
+.cta h2 {
+    color: #FF0000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+}
+.cta p{
+    color: #1d1d1d;
+}
+
    /*AQUI COMIENZA SECCION PRODUCTOS*/
    .titulo-producto{
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+ 
 
    /*AQUI COMIENZA SECCION CONTACTO*/
 
@@ -353,7 +506,7 @@ p{
     border-radius: 0 30px;
     text-transform: uppercase;
     padding-top: 1rem;
-    
+
 }
 .form {
     position: relative;
@@ -491,6 +644,30 @@ p{
     padding-bottom: 5rem;
     }
 
+    
+.form-buttons {
+    max-width: 50%;
+    margin: auto;
+    display: grid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 15px;
+    list-style: none;
+    justify-content: space-around;
+    line-height: 50px; }
+    .form-buttons a {
+      color: rgba(10, 7, 0, 0.87451); }
+  
+  .contacto-Map {
+    max-width: 200%;
+    height: 200%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 5rem; }
+
 /* @media contacto */
 @media screen and (max-width: 880px) {
     .contact-box {
@@ -512,8 +689,16 @@ p{
         height: 200px;
         margin: auto;
     }
+ 
     }
-
+/*AQUI COMIENZA SECCION PRODUCTO*/
+  .producto-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 25px; /* Espacio entre las cards */
+    padding: 120px;
+  }
+  
 /*AQUI COMIENZA EL FOOTER*/
 
 /* NEWSLETTER-FOOTER */
@@ -678,9 +863,38 @@ footer{
     }
     }
 
-  .fa-whatsapp{
-    font-size: 5em;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
+
+
+@media screen and (max-width: 600px) {
+    .barraDeCotizacion{
+        max-width: 100%;
+        padding-top: 11rem;
+        flex-direction: column;
+    }
+    .barraDeCotizacion h6{
+        font-size: small;
+    }
+}
+/* BARRA DE COTIZACIÓN */
+.barraDeCotizacion{
+    width: 100%;
+    margin: auto;
+    padding-left: 5px;
+    padding-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color:#871501;
+    color: #e8f1ff;
+}
+
+@media screen and (max-width: 600px) {
+    .barraDeCotizacion{
+        max-width: 100%;
+        padding-top: 11rem;
+        flex-direction: column;
+    }
+    .barraDeCotizacion h6{
+        font-size:smaller;
+    }
+}

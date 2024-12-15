@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tienda online de muebles y decoración.">
+        <meta name="keywords" content=" Muebles, sofa, silas, minimalista,
+        lifestyle, decoración.">
         <script src="https://kit.fontawesome.com/f2a42f8cc9.js" crossorigin="anonymous"></script> 
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <title>MueblesArts</title>
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
         <link rel="shortcut icon" href="sofa.ico.png"> 
@@ -13,14 +16,39 @@
     </head>
     <body>
         <!-- hola este es un comentario--> 
+            
+             
         <header>
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <a href="#">
+                            <img src="assets/image/logo.png" alt="logo de MuebleArt, sofa con cuadros" width="55" height="45">
+                            <h6 class="logo-text">MueblesArts</h6>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <div class="nav-links navbar-nav">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                        <a href="./pages/nosotros.html" class="nav-link">Nosotros</a>
+                        <a href="./pages/blog.html" class="nav-link">Blog</a>
+                        <a href="./pages/productos.html" class="nav-link">Productos</a>
+                        <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+                        <a href="#container__footer" class="nav-link">Información General</a>
+                        <a href="./pages/productos.html" class="carrito nav-link">
+                            <i class="fa-solid fa-cart-shopping"></i>Carrito
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            <!-- <nav class="navbar">
                 <div class="navbar-brand">
                     <a href="#">
                         <img src="assets/image/logo.png" alt="logo de MuebleArt, sofa con cuadros" width="55" height="45">
                         <h6 class="logo-text">MueblesArts</h6>
-                    </a>
-                    
                 </div>
                 <div class="nav-links">
                     <a href="index.html" class="nav-link">Inicio</a>
@@ -33,22 +61,25 @@
                         <i class="fa-solid fa-cart-shopping"></i>Carrito
                     </a>
                 </div>
-            </nav>
+            </nav> -->
         </header>
         <div class="promo">
             <h3 class="promo-text">
                 ENVIOS A TODO EL PAIS 15% OFF ABONANDO CON TRANSFERENCIA Y HASTA 6 CUOTAS SIN INTERES!!!
             </h3>
         </div>
+    
         <section class="banner">
                 <div class="banner-content">
                 <h1 class="banner-titulo" data-aos="fade-up" data-aos-duration="1500"> Bienvenidos a MuebleArts<br>Para los entusiastas del <span class= "diseño" >Diseño.</span>
                 </h1>
-                <!-- <a href=""><b> Ir a comprar</b></a> -->
                 </div>
-                <!-- class="animate__animated animate__bounce animate__delay-2s" -->
             </section>
-        
+
+             <!-- barra de cotizacion -->
+        <div id="barraDeCotizacion" class="barraDeCotizacion">
+        </div>
+    
         <main >
             <H1 class="titulo_nuevos_ingresos"> Nuevos Ingresos </H1>
             <br>
@@ -58,40 +89,104 @@
                     <span class="card-tag">Nuevo</span>
                     <img src="./assets/image/mueble_toga.webp" alt="Sillon Toga" class="card-image">
                     <h3 class="card-title">Sillon Toga</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="./pages/productos.html" class="card-button">Agregar<i class="fa-solid fa-cart-shopping"></i></a>
+                    <p class="card-text">$1.818.630</p>
+                    <p class="card-efctiv"><strong>$1.091.630 con Efectivo</strong></p>
+                    <a href="./pages/productos.html" class="card-boton">Agregar<i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             
                 <!-- Card 2 -->
                 <div class="card">
                     <span class="card-tag">Nuevo</span>
-                    <img src="./assets/image/mueble_toga.webp" alt="Sillon Toga" class="card-image">
-                    <h3 class="card-title">Sillon Toga</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="./pages/productos.html" class="card-button">Agregar <i class="fa-solid fa-cart-shopping"></i></a>
+                    <img src="./assets/image/sofa_miboo.jpg" alt="Sofa Miboo" class="card-image">
+                    <h3 class="card-title">Sofa Miboo</h3>
+                    <p class="card-text">$1.818.630</p>
+                    <p class="card-efctiv"><strong>$1.091.630 con Efectivo</strong></p>
+                    <a href="./pages/productos.html" class="card-boton">Agregar <i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             
                 <!-- Card 3 -->
                 <div class="card">
                     <span class="card-tag">Nuevo</span>
-                    <img src="./assets/image/mueble_toga.webp" alt="Sillon Toga" class="card-image">
-                    <h3 class="card-title">Sillon Toga</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="./pages/productos.html" class="card-button">Agregar <i class="fa-solid fa-cart-shopping"></i></a>
+                    <img src="./assets/image/sofa_cama_futon.webp" alt="Sofa Cama futon" class="card-image">
+                    <h3 class="card-title">Sofa Cama Futon</h3>
+                    <p class="card-text">$1.818.630</p>
+                    <p class="card-efctiv"><strong>$1.091.630 con Efectivo</strong></p>
+                    <a href="./pages/productos.html" class="card-boton">Agregar <i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             
                 <!-- Card 4 -->
                 <div class="card">
                     <span class="card-tag">Nuevo</span>
-                    <img src="./assets/image/mueble_toga.webp"alt="Sillon Toga" class="card-image">
+                    <img src="./assets/image/sofa_shaise.jpg"alt="Sillon Toga" class="card-image">
                     <h3 class="card-title">Sillon Toga</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="./pages/productos.html" class="card-button">Agregar<i class="fa-solid fa-cart-shopping"></i></a>
+                    <p class="card-text">$1.818.630</p>
+                    <p class="card-efctiv"><strong>$1.091.630 con Efectivo</strong></p>
+                    <a href="./pages/productos.html" class="card-boton">Agregar<i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
             <div>
                 <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i></a>
             </div>
+            <section id="inicio-consultas">
+                <h2>Transforma tu Negocio con Nuestro Catálogo de Muebles para Empresas </h2>
+                    <div class="p-consultas">
+                        <p>
+                            ¿Buscas equipar espacios comerciales con estilo y eficiencia? <strong>En MueblesArts</strong> somos tus aliados en amueblamiento profesional.
+                          </p>
+                          <p>No solo vendemos muebles, creamos experiencias que transforman espacios comerciales.
+                            Nuestro compromiso: Equipar tu visión, elevar tu negocio.
+                            Cotiza tu proyecto mayorista hoy mismo</p>
+                         <p> ¡Tu éxito comienza con el lugar correcto! 🚀</p>
+                    </div>
+              </section>
+              <div id="inicio">
+                <div class="card-body" data-aos="fade-right"
+                  data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="icon"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                  </div>
+                <div class="content">
+                  <h3> PAGÁ COMO QUIERAS</h3>
+                  <h4>Tarjetas de crédito o efectivo</h4>
+                  <p>
+                    Contamos con todos los medios de pago. Efectivo en todas nuestra sucursales, transferencia bancaria y 
+                    tarjetas de crédito acreditación instantánea. 
+                  </p>
+                <p>
+                  
+                  Hasta 6 cuotas sin interés
+                  <a href="#">Ver condiciones</a>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body" data-aos="fade-right"
+                data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                <div class="content">
+                  <h3> ENVIAMOS TU COMPRA </h3>
+                  <p>
+                    Los pedidos se envían, dentro de la franja horaria de atención, en 48hs hábiles.
+              
+                    De no ser posible realizar el envío, se informará al cliente. 
+                  </p>
+                </div>
+              </div>
+              
+              <div class="card-body" data-aos="fade-right"
+                data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="icon"><i class="fa-solid fa-award"></i></div>
+                <div class="content">
+                  <h3>PRODUCTOS DE GARANTÍA</h3>
+                  <p>
+                    COMPRÁ CON SEGURIDAD.
+                    <br>
+                    Tus datos siempre protegidos.
+                  </p>
+                </div>
+                </div>
+                </div>
+
+           
+                
         </main>
         <footer>
             <div id="container__footer">
@@ -130,10 +225,10 @@
 
             <div class="box__footer">
                 <h3>REDES SOCIALES</h3>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="https://x.com/"><i class="fab fa-twitter-square"></i> Twitter</a>
-                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i> x-Twitter</a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
             </div>
         </div>
                 
@@ -149,7 +244,11 @@
         <script>
             AOS.init();
         </script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+             <!-- sweet alert -->
+             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+             <script src="js/script.js"></script>
+             <script src="js/cotizador-barra.js"></script>
     </body>
     
 </html>
