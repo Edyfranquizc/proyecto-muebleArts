@@ -356,10 +356,91 @@ h3{
     right: 20px;
   }
 
+     /*AQUI COMIENZA SECCION COMENTARIOS*/
+
+  .comentarios-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+
+  }
+  .comentarios-contenedor {
+    background-color:#f9f9f9;
+    width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    
+}
+
+.titulo-comentarios {
+    color: #FF0000;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario-comentario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formulario-comentario input, 
+.formulario-comentario textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.boton-enviar {
+    background-color:#871501;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #871501;
+}
+
+.comentario {
+    background-color: #f9f9f9;
+    border-left: 4px solid #871501;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.comentario-autor {
+    font-weight: bold;
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+
+.comentario-texto {
+    color: #871501;
+}
+
+.mensaje-alerta {
+    color: #2c03e2dc;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mensaje-error {
+    color: #ff2e2e;
+    margin-top: 10px;
+    text-align: center;
+}
    /*AQUI COMIENZA SECCION NOSOTROS*/
    .nosotros {
     padding: 40px;
-    color: #333; /* Color de texto */
+    color: #1d1d1d; /* Color de texto */
   }
   
   .contenedor-nosotros {
@@ -404,12 +485,13 @@ h3{
   /*AQUI COMIENZA SECCION BLOG*/
 
   .blog{
-    padding-top: 4rem;
+   
+    padding-top: 2rem;
     padding-bottom: 1rem;
     margin: auto;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     
 }
 .blog-titulo{
@@ -425,29 +507,34 @@ h3{
 }
 
 .secciones{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     text-align: justify;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:1rem;
     padding-bottom: 1rem;
+ 
 }
 
 .item{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.90rem;
+    padding-bottom: 0.90rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 70px;
   }
 
 .item h2 {
-    color:  #1d1d1d;;
+    color:#1d1d1d;
     font-size: 1rem;
     margin-bottom: 10px;
+    font: bold;
     
 }
 
 .item img {
-    max-width: 20%;
+    max-width: 40%;
     height: auto;
     margin-top: 10px;
     border-radius: 5px;
@@ -461,10 +548,10 @@ h3{
 
 .cta {
     background-color:#f9ffcd;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
-    padding-bottom: 5rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .cta h2 {
@@ -864,17 +951,6 @@ footer{
     }
 
 
-
-@media screen and (max-width: 600px) {
-    .barraDeCotizacion{
-        max-width: 100%;
-        padding-top: 11rem;
-        flex-direction: column;
-    }
-    .barraDeCotizacion h6{
-        font-size: small;
-    }
-}
 /* BARRA DE COTIZACIÓN */
 .barraDeCotizacion{
     width: 100%;
@@ -891,7 +967,7 @@ footer{
 @media screen and (max-width: 600px) {
     .barraDeCotizacion{
         max-width: 100%;
-        padding-top: 11rem;
+        padding-top: 0.80rem;
         flex-direction: column;
     }
     .barraDeCotizacion h6{

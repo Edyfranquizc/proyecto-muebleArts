@@ -183,10 +183,35 @@
                   </p>
                 </div>
                 </div>
-                </div>
-
-           
-                
+                </div>  
+                <section class="comentarios-form">
+                <div class="comentarios-contenedor">
+                    <h2 class="titulo-comentarios">Comentarios De Nuestros Clientes</h2>
+                    
+                    <form id="formularioComentarios" class="formulario-comentario">
+                        <input type="text" id="nombreUsuario" placeholder="Tu nombre" required>
+                        <textarea id="textoComentario" placeholder="Escribe tu comentario..." rows="4" required></textarea>
+                        <button type="submit" class="boton-enviar">Enviar Comentario</button>
+                        <div id="mensajeResultado"></div>
+                    </form>
+            
+                    <div id="seccionComentarios">
+                        <div class="comentario">
+                            <div class="comentario-autor">María Fernada Rodríguez <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+                            <div class="comentario-texto">
+                                Enamorada de mi nuevo sofá, llego a tiempo excelente servicio.
+                            </div>
+                        </div>
+            
+                        <div class="comentario">
+                            <div class="comentario-autor">Juan Godoy <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i></div>
+                            <div class="comentario-texto">
+                                Diseños hermosos y de buena calidad, lo recomiendo!
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </section>          
         </main>
         <footer>
             <div id="container__footer">
@@ -249,6 +274,7 @@
              <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
              <script src="js/script.js"></script>
              <script src="js/cotizador-barra.js"></script>
+             <script src="js/comentario-form.js"></script>
     </body>
     
 </html>
