@@ -1,4 +1,4 @@
-Pagina web ecommerce
+Pagina web 
 
 🖖🏼Hola Mi nombre es Edygar Franquiz
 !Bienvenido a mi proyecto de Talento Tech Front end  JS! 😎🤍💻
