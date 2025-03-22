@@ -5,7 +5,7 @@ Swal.fire({
     text: 'MueblesArts!',
     footer: 'Hoy es un buen día para decorar tu casa 🏠',
     color:'#ffffff',
-    background:'#FF0000',
+    background:'rgba(146, 122, 122, 0.89)',
     confirmButtonColor:'#871501', 
     })
 
