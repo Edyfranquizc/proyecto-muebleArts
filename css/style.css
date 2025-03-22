@@ -73,8 +73,8 @@ a {
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.502);
-    color:#f9ffcd;
+    background-color: transparent;
+        color: #f9ffcd;
 }
 
 .carrito {
@@ -94,6 +94,117 @@ a {
 .carrito:hover {
     border-radius: 90px;
     color: #ffffff;
+}
+/* Estilos para el botón del menú móvil */
+.navbar-toggler {
+    display: none;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    color:#e8f1ff;
+    
+}
+
+
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: transform 0.3s;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+/* Media queries para responsive */
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+    .nav-links {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-toggler-icon {
+        display: block;
+    }
+    
+    .collapse:not(.show) {
+        display: none;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #370000;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .nav-link {
+        width: 80%;
+        text-align: center;
+        margin: 8px 0;
+    }
+    
+    .carrito {
+        margin: 8px 0;
+        display: flex;
+        justify-content: center; /* Centra el contenido dentro del contenedor */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+
+    /* Si es necesario ajustar el icono dentro del carrito, puedes agregar: */
+    .carrito i {
+        margin-right: 5px;
+    }
+    .nav-link:hover {
+        background-color: none;
+        color:#f9ffcd;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand img {
+        width: 60px;
+        height: 50px;
+    }
+    
+    .nav-link {
+        width: 90%;
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
 }
     
 .banner {
@@ -162,6 +273,27 @@ h3{
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+    h1{
+        font-size: 1.5rem;
+        
+    }
+    
+    h2{
+        margin-left: 1rem;
+       
+    }
+    
+    p{
+        margin-left: 0.90rem;
+        margin-right: 0.90rem;
+    }
+    
+    h3{
+        font-size: 0.90rem;
+    }
+}
+
 
 .promo{ 
     width:100%;
@@ -189,6 +321,12 @@ h3{
     transform: translateX(-100%);
     }
 }
+@media screen and (max-width: 1200px) {
+    .promo-text{
+        font-size: 0.70rem;
+    }  
+}
+
 /* cards*/
 .titulo_nuevos_ingresos{
     text-align: center;
@@ -366,6 +504,14 @@ h3{
     bottom: 20px;
     right: 20px;
   }
+  @media screen and (max-width: 1200px) {
+    .fa-whatsapp{
+        font-size: 4em;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+}
 
      /*AQUI COMIENZA SECCION COMENTARIOS*/
 
@@ -973,17 +1119,21 @@ footer{
     color:#ECEDCF;
     font-size: 16px;
 }
-@media screen and (max-width: 600px){
-    .box__footer .logo img{
-        width: 70px;
-    }
-    #container__footer{
-        margin: auto;
-        padding-top: 0.5rem;
-    }
-    }
 
 
+    @media screen and (max-width: 1200px){
+        .box__footer .logo img{
+            width: 120px;
+        }
+        #container__footer{
+            margin: auto;
+            padding-top: 0.5rem;
+        }
+        .box__copyright p{
+            font-size:15px ;
+        }
+        }
+    
 /* BARRA DE COTIZACIÓN */
 .barraDeCotizacion{
     width: 100%;
@@ -998,7 +1148,7 @@ footer{
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .barraDeCotizacion{
         max-width: 100%;
         padding-top: 0.80rem;

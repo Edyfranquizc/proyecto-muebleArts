@@ -8,6 +8,3 @@ Swal.fire({
     background:'rgba(146, 122, 122, 0.89)',
     confirmButtonColor:'#871501', 
     })
-
-
-    
