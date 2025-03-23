@@ -24,7 +24,7 @@ a {
 
 .navbar-brand{
     margin-left: 100px;
-    margin-right: 200px;
+    margin-right: 140px;
     align-items: center;
     padding-top: 2px;
     .logo-text{
@@ -83,7 +83,7 @@ a {
     color: #ffffff;
     text-decoration: none;
     gap: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 8px 20px;
 }
 
