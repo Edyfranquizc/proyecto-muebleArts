@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Krona+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     scroll-behavior: smooth;
     box-sizing: border-box;
     text-decoration: none;
-    font-family:"Ibarra Real Nova", serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 ::-webkit-scrollbar{
     width: 0;
@@ -194,7 +194,8 @@ a {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
+    
     .navbar-brand img {
         width: 60px;
         height: 50px;
@@ -204,6 +205,9 @@ a {
         width: 90%;
         font-size: 0.85rem;
         padding: 8px 15px;
+    }
+    body{
+        width: 100%;
     }
 }
     
@@ -246,6 +250,7 @@ a {
     background-color: #ecedcf9b;
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 20px;
     border-radius: 0 30px;
     text-transform: uppercase;
         }
@@ -283,18 +288,20 @@ h3{
     padding-bottom: 0.50rem;
     text-align: center;
     background-color: #ECEDCF;
-    color: #370000 ;}
+    color: #370000 ;
+}
 .promo-text{
     white-space: nowrap;
     font-size: 0.80rem;
     padding-top: 5rem;
     font-weight:bold;
     animation: 25s promo-text infinite;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
+    font-family: Arial, Helvetica, sans-serif;
 }  
 @keyframes promo-text{
     from{
-        transform: translateX(0);
+        transform: translateX(100);
     }
     to{
     transform: translateX(-100%);
@@ -566,7 +573,7 @@ h3{
     margin: 0 auto;
     padding: 20px;
     padding-top: 7rem;
-    padding-bottom: 10;
+    padding-bottom: 10rem;
     display: grid;
     grid-template-columns: 60% 40%;
     gap: 30px;
@@ -1085,12 +1092,16 @@ footer{
     font-size: 15px;
 }
 @media screen and (max-width: 600px){
+    
     .box__footer .logo img{
         width: 70px;
     }
     #container__footer{
         margin: auto;
         padding-top: 0.5rem;
+    }
+    footer{
+        width: 100%;
     }
     }
 
@@ -1121,6 +1132,6 @@ footer{
 }
 
   
-  
+
   
   
