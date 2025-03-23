@@ -24,7 +24,7 @@ a {
 
 .navbar-brand{
     margin-left: 100px;
-    margin-right: 140px;
+    margin-right: 120px;
     align-items: center;
     padding-top: 2px;
     .logo-text{
@@ -127,15 +127,6 @@ a {
 }
 
 /* Media queries para responsive */
-@media screen and (max-width: 1200px) {
-    .navbar-brand {
-        margin-left: 40px;
-        margin-right: 80px;
-    }
-    .nav-links {
-        padding-left: 0;
-    }
-}
 
 @media screen and (max-width: 992px) {
     .navbar-brand {
@@ -206,9 +197,7 @@ a {
         font-size: 0.85rem;
         padding: 8px 15px;
     }
-    body{
-        width: 100%;
-    }
+    
 }
     
 .banner {
