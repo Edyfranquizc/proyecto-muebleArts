@@ -128,7 +128,7 @@ a {
 
 /* Media queries para responsive */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
     .navbar{
     width:420px;
     }
