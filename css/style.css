@@ -130,7 +130,7 @@ a {
 
 @media screen and (max-width: 480px) {
     .navbar{
-    width:430px;
+    width:420px;
     }
     .navbar-brand {
         margin-left: 20px;
