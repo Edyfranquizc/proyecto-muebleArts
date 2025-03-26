@@ -24,7 +24,7 @@ a {
 
 .navbar-brand{
     margin-left: 100px;
-    margin-right: 120px;
+    margin-right: 200px;
     align-items: center;
     padding-top: 2px;
     .logo-text{
@@ -47,7 +47,7 @@ a {
 .navbar{
     background-color: #370000;
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     padding: 2px 5px;
     padding-bottom: 1rem;
     justify-content:space-between;
@@ -129,6 +129,13 @@ a {
 /* Media queries para responsive */
 
 @media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+    width:430px;
+    }
     .navbar-brand {
         margin-left: 20px;
         margin-right: 0;
@@ -183,9 +190,6 @@ a {
         background-color: none;
         color:#f9ffcd;
     }
-}
-
-@media screen and (max-width: 600px) {
     
     .navbar-brand img {
         width: 60px;
@@ -296,6 +300,16 @@ h3{
     transform: translateX(-100%);
     }
 }
+@media screen and (max-width: 600px) {
+    .promo {
+        display: none;
+        padding: 0.90rem; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .promo-text {
+        font-size: 0.9rem; /* Reduce el tamaño del texto en móviles */
+    }
+  }
 /* cards*/
 .titulo_nuevos_ingresos{
     text-align: center;
@@ -622,7 +636,7 @@ h1 {
   /*AQUI COMIENZA SECCION BLOG*/
 
   .blog{
-   width: 1000px;
+   width: 100%;
     padding-top: 2rem;
     padding-bottom: 1rem;
     margin: auto;
@@ -702,14 +716,44 @@ h1 {
     color: #1d1d1d;
 }
 
-   /*AQUI COMIENZA SECCION PRODUCTOS*/
-   .titulo-producto{
+@media (max-width: 600px) {
+    .blog{
+        width: 420px;
+    }
+    .blog-titulo{
+        padding-top: 5rem;
+        text-align:center;
+    }
+}
+
+
+/*AQUI COMIENZA SECCION PRODUCTOS*/
+.titulo-producto{
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+/*AQUI COMIENZA SECCION PRODUCTO*/
+.producto-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 25px; /* Espacio entre las cards */
+    padding: 120px;
   }
- 
 
-   /*AQUI COMIENZA SECCION CONTACTO*/
+  @media (max-width: 600px) {
+    .producto-container{
+        display:contents;
+        align-items: center;
+        grid-template-columns: repeat(1fr); /* 1 columnas iguales */
+        gap: -25px; /* Espacio entre las cards */
+      }
+      .card{
+        margin:auto;
+      }
+      
+}
+
+/*AQUI COMIENZA SECCION CONTACTO*/
 
 #contacto{
     padding-top: 8rem;
@@ -916,13 +960,7 @@ h1 {
     }
  
     }
-/*AQUI COMIENZA SECCION PRODUCTO*/
-  .producto-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-    gap: 25px; /* Espacio entre las cards */
-    padding: 120px;
-  }
+
   
 /*AQUI COMIENZA EL FOOTER*/
 
