@@ -451,9 +451,9 @@ h3{
     margin: auto;
     padding-top: 5rem;
     padding-bottom: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    text-align: justify; }
+    padding-left: 2rem;
+    padding-right:2rem;
+    text-align:left; }
     #inicio {
         max-width: 75%;
         margin: 50px auto;
@@ -485,7 +485,8 @@ h3{
                 font-size: 1rem;
                 padding-left: 1rem;
             }
-      
+
+
    /*AQUI WHATSAPP FLOTANTE*/
   .fa-whatsapp{
     font-size: 6em;
@@ -493,6 +494,8 @@ h3{
     bottom: 20px;
     right: 20px;
   }
+
+
 
      /*AQUI COMIENZA SECCION COMENTARIOS*/
 
