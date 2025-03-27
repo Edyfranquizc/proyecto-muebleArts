@@ -23,9 +23,9 @@ a {
 } 
 
 .navbar-brand{
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 200px;
-    align-items: center;
+    align-items:flex-end;
     padding-top: 2px;
     .logo-text{
         margin: auto;
@@ -36,7 +36,7 @@ a {
 }
 .nav-item a {
     color:#ECEDCF;
-    margin-right: 20px;
+    margin-right: 50px;
     margin-left: 20px;
 }
 
@@ -128,13 +128,12 @@ a {
 
 /* Media queries para responsive */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .navbar{
-    width:420px;
+    width:380px;
     }
     .navbar-brand {
-        margin-left: 20px;
-        margin-right: 0;
+        margin-left: 10px;
     }
     
     .navbar-toggler {
@@ -173,14 +172,14 @@ a {
     
     .carrito {
         margin: 8px 0;
-        display: flex;
+        display:contents;
         justify-content: center; /* Centra el contenido dentro del contenedor */
         width: 100%; /* Asegura que ocupe todo el ancho disponible */
     }
 
     /* Si es necesario ajustar el icono dentro del carrito, puedes agregar: */
     .carrito i {
-        margin-right: 5px;
+        margin-left: 10px;
     }
     .nav-link:hover {
         background-color: none;
@@ -193,7 +192,7 @@ a {
     }
     
     .nav-link {
-        width: 90%;
+        width: 100%;
         font-size: 0.85rem;
         padding: 8px 15px;
     }
@@ -267,6 +266,17 @@ h3{
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 600px) {
+    .banner {
+        padding-top: 5rem;
+    }
+ 
+    .banner-titulo {
+        font-size: 24px; /* Tamaño más pequeño para móviles */
+    }
+
+ 
+ } 
 
 .promo{ 
     width:100%;
